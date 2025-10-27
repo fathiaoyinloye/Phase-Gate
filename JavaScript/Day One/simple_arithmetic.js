@@ -1,12 +1,13 @@
 const prompt = require('prompt-sync')();
 let count = 0;
 let numberOfTime = 0
+let score = 0
+
 while (numberOfTime < 10){
 	while (count < 2){
 		let number = Number(prompt("Enter a number: "))
 		let numberTwo = Number (prompt("Enter another number: "))
 		let maximum = number
-		let score = 0
 		if (numberTwo > number)
 			maximum = numberTwo;
 		let minimum = numberTwo
@@ -20,9 +21,16 @@ while (numberOfTime < 10){
 			break;
 		}
 		else{
-			if (count == 2)
-				break;
+		let fail = 1
+		while(fail != 2){
+			let choice = Number(prompt("What is " + maximum + " minus  " + minimum + ": "))
+			fail += 1
 			console.log("You can do it");
+			}
+			numberOfTime += 1
+			continue;
+			if (numberOfTime == 10)
+			break;
 		}
 		count += 1
 	
@@ -30,3 +38,4 @@ while (numberOfTime < 10){
 	}
 	numberOfTime += 1
 }
+console.log("Your score is: " + score)
