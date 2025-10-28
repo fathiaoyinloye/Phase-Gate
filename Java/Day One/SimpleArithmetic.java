@@ -8,10 +8,10 @@ public class SimpleArithmetic{
 
 		System.out.println(showMenu());
 		Long timeOne = System.currentTimeMillis();
-		int count = 0;
 		int passes = 0;
 		int numberPlay = 10;
 		while (numberPlay > 0){
+			int count = 0;
 			int[] game = generateAndSubtractRandomNumbers();
 			while(count < 2){
 				System.out.print("What is " + game[0] + " - " + game[1] + ": ");
@@ -23,12 +23,14 @@ public class SimpleArithmetic{
 					break;
 				}
 				else{
-					System.out.println("You can do it sweetheart, Try Again");
-					numberPlay -= 1;
 					if (count == 1){
+					System.out.println("You have exhasted your last trial");
 						break;
 						
 					}
+					System.out.println("You can do it sweetheart, Try Again");
+					numberPlay -= 1;
+					
 			
 			count += 1;
 			}
@@ -41,7 +43,7 @@ public class SimpleArithmetic{
 		Long timeUsed = timeTwo - timeOne;
 		Long timeInSeconds = timeUsed/1000;
 		System.out.println("The time used is: " + timeInSeconds + "Seconds");
-		System.out.print("Your Total score is: "+ passes);
+		System.out.print("Your Total score is: "+ passes +"/10");
 
 
 	}
