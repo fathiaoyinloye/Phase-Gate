@@ -18,8 +18,8 @@ function generateAndSubtractRandomNumbers(){
 		["I can eat millions of this is what figure of speech","(a) hyperbole (b)irony (c) metaphor", "a"],
 		["___ can be seen as a crochet tool","(a) knife (b)cotton (c) Stich maker", "c"],
 		["He is as dirty as a pig is what figure of speech","(a) hyperbole (b)simile (c) metaphor", "b"],
+		["He is a pig is what figure of speech","(a) hyperbole (b)simile (c) metaphor", "c"]
 		["He a pig is what figure of speech","(a) hyperbole (b)simile (c) metaphor", "c"]
-
 
 	]
 		let questions = myList[index]

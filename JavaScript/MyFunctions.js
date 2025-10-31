@@ -28,7 +28,7 @@ let isAPerFectSquare = []
 for (let index = 0; index < myNumber.length; index++){
 	let divisor = 2;
 	while(myNumber[index] % divisor != 0){
-		divisor++;
+		divisor += 1;
 
 		}
 	let numberInHalf = myNumber[index]/divisor;
@@ -50,4 +50,7 @@ for (let index = 0; index < myNumber.length; index++){
 
 	}
 
+
+let myList = [4,5,6,7,100];
+console.log(elementIsAPerfectSquare(myList));
 

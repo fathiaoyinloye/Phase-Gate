@@ -38,6 +38,8 @@ public class MyFunctions{
 
 
 
+	
+
 
 
 	public static boolean[] isElementIsAPerfectNumber(int[] myNumber){
