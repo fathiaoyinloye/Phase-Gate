@@ -1,0 +1,25 @@
+def get_items(items):
+	return items
+
+
+def get_price(prices):
+	return prices
+
+def total_price(prices):
+	sum = 0;
+	for price in prices:
+		sum += price
+
+	return sum;
+
+def calculate_vat(sum):
+	vat = (sum * 7.5)/100;
+	return vat;
+	
+def calculate_sum_after_vat(sum, vat):
+	total = sum + vat;
+	return total;
+
+
+
+	
